@@ -142,7 +142,7 @@ function draw() {
 
 }
 
-function mouseClicked() {
+function mousePressed() {
   var isOverlappingAcceptButton = isOverlappingButton(acceptButtonX, acceptButtonY, acceptButtonWidth, acceptButtonHeight);
   var isOverlappingSubmitButton = isOverlappingButton(submitButtonX, submitButtonY, submitButtonWidth, submitButtonHeight);
   var isOverlappingEnterButton = isOverlappingButton(enterButtonX, enterButtonY, enterButtonWidth, enterButtonHeight);
