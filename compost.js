@@ -1,4 +1,4 @@
-var introTime = 60 * 1;
+var introTime = 60 * 7;
 var iphoneWidth = 750;
 var iphoneHeight = 1294;
 var currentPage = 0;
