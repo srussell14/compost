@@ -1,4 +1,4 @@
-var introTime = 60 * 7;
+var introTime = 60 * 1;
 var iphoneWidth = 750;
 var iphoneHeight = 1294;
 var currentPage = 0;
@@ -97,6 +97,9 @@ var bin4ButtonY = 320;
 
 var confirmBin;
 
+var flyXarray = [];
+var flyYarray = [];
+
 function preload() {
   firstMenu = loadImage("assets/first_menu.png");
   secondMenu = loadImage("assets/second_menu.png");
@@ -125,6 +128,11 @@ function setup() {
   imageMode(CENTER);
   textAlign(CENTER, CENTER);
   textSize(50);
+  for(var i=0;i<3;i++){
+  flyXarray[i]=random(150,150)}
+  for(var i=0;i<3;i++){
+  flyYarray[i]=random(303,303)}
+
 }
 
 function draw() {
@@ -329,6 +337,14 @@ function displayThankYouPage() {
   textStyle(ITALIC);
 
   text("Thank You", thankyouX, thankyouY);
+
+  for(var i=0;i<3;i++){
+  fill(20,20,20);
+  ellipse(flyXarray[i],flyYarray[i], 6,3)
+  flyXarray[i]+= random(-2,2);
+  flyYarray[i]-= random(-2,2);
+
+}
 
   image(truck, truckX, truckY, 500, 115);
 
