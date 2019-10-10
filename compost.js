@@ -128,9 +128,9 @@ function setup() {
   imageMode(CENTER);
   textAlign(CENTER, CENTER);
   textSize(50);
-  for(var i=0;i<3;i++){
+  for(var i=0;i<4;i++){
   flyXarray[i]=random(150,150)}
-  for(var i=0;i<3;i++){
+  for(var i=0;i<4;i++){
   flyYarray[i]=random(303,303)}
 
 }
@@ -338,7 +338,7 @@ function displayThankYouPage() {
 
   text("Thank You", thankyouX, thankyouY);
 
-  for(var i=0;i<3;i++){
+  for(var i=0;i<4;i++){
   fill(20,20,20);
   ellipse(flyXarray[i],flyYarray[i], 6,3)
   flyXarray[i]+= random(-2,2);
