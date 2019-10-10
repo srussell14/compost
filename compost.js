@@ -198,18 +198,18 @@ function displayIntroAndTransition() {
 
   if (frameCount < introTime) {
 
+  //I could not get the dropshadow on my logo to display properly so I
+  //had to create an image with my logo and background together for the
+  //welcome screen.
+
     image(backgroundLogo, width / 2, height / 2, width, height);
-
     image(compostBin, width / 2, 300, 150, 151);
-
     image(firstMenu, width / 2, 69 / 2, width, 69);
     fill(250);
     textSize(20);
     textStyle(ITALIC);
     textAlign(LEFT);
-
     let homeInstructionText = 'Please Submit Your Compost Bin Levels Daily';
-
     text(homeInstructionText, 160, 550, 300, 180);
     textAlign(CENTER, CENTER);
     image(bottomMenuHome, width / 2, 1225 / 2, width, 69);
@@ -274,7 +274,6 @@ function displayPage1() {
 
 function displayPage2() {
 
-
   background(119, 170, 77);
   fill(44, 132, 65);
   image(secondMenu, width / 2, 69 / 2, width, 69);
@@ -294,7 +293,6 @@ function displayPage2() {
   let homeInstructionText = 'Submit Your Compost Bin Level';
   text(homeInstructionText, 160, 560, 300, 180);
   textAlign(CENTER, CENTER);
-
 
   text("Submit", submitButtonX, submitButtonY);
   image(bottomBackMenu, width / 2, 1225 / 2, width, 69);
@@ -327,11 +325,13 @@ function displayPage3() {
   textSize(20);
   text("Confirm", confirmButtonX, confirmButtonY);
   image(bottomBackMenu, width / 2, 1225 / 2, width, 69);
+
 }
 
 function displayThankYouPage() {
   background(119, 170, 77);
   image(secondMenu, width / 2, 69 / 2, width, 69);
+  image(bottomMenuHome, width / 2, 1225 / 2, width, 69);
   fill(0);
   textSize(50);
   textStyle(ITALIC);
@@ -348,7 +348,6 @@ function displayThankYouPage() {
 
   image(truck, truckX, truckY, 500, 115);
 
-  image(bottomMenuHome, width / 2, 1225 / 2, width, 69);
   truckX = truckX + truckDirection
 
   if (truckX > 650) {
